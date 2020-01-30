@@ -2,6 +2,7 @@
 #include <string>
 #include <vector>
 #include <windows.h>
+#include "Phyton.h"
 using namespace std;
 
 class Map {
@@ -14,9 +15,6 @@ public:
 				if (i == 0 || i == 19 || j == 0 || j == 19) {
 					Map[i][j] = 1;
 				}
-				else {
-					Map[i][j] = 0;
-				}
 			}
 		}
 	}
@@ -28,15 +26,13 @@ public:
 					Sleep(35);
 					cout << "#";
 				}
-				else if (Map[i][j] == 0) {
+				else {
 					cout << " ";
 				}
 			}
 			cout << endl;
 		}
 	}
-
-
 /*	void SpawnMap() {
 		int i = 20 / 2, j = 20 / 2, Food = rand() % 10, Food2 = rand() % 10;
 
@@ -56,4 +52,7 @@ public:
 			cout << endl;
 		}
 	}*/
+
+
+
 };
